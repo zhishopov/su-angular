@@ -1,1 +1,7 @@
 <h2>Hello {{ name }}!</h2>
+
+<ul>
+  @for(user of users; track user) {
+  <li>{{ user.name }}</li>
+  }
+</ul>

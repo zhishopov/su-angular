@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from '../models/user.model';
 
 @Component({
   selector: 'app-hello',
@@ -7,5 +8,24 @@ import { Component } from '@angular/core';
   styleUrl: './hello.css',
 })
 export class Hello {
-  name = 'Gosho';
+  name = 'Stefan';
+
+  users: User[] = [
+    {
+      id: 1,
+      name: 'Ivan',
+    },
+    {
+      id: 2,
+      name: 'Pesho',
+    },
+    {
+      id: 3,
+      name: 'Gosho',
+    },
+  ];
+
+  constructor() {
+    console.log('Initializing Component');
+  }
 }
