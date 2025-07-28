@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { User } from '../models/user.model';
+import { Company } from '../models/company';
 
 @Component({
   selector: 'app-hello',
@@ -14,14 +15,23 @@ export class Hello {
     {
       id: 1,
       name: 'Ivan',
+      company: <Company>{
+        name: 'Softuni',
+      },
     },
     {
       id: 2,
       name: 'Pesho',
+      company: <Company>{
+        name: 'Softuni',
+      },
     },
     {
       id: 3,
       name: 'Gosho',
+      company: <Company>{
+        name: 'Softuni',
+      },
     },
   ];
 
