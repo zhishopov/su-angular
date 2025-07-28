@@ -9,7 +9,8 @@ import { Company } from '../models/company';
   styleUrl: './hello.css',
 })
 export class Hello {
-  name = 'Stefan';
+  name: string = 'Stefan';
+  isLoggedIn: boolean = false;
 
   users: User[] = [
     {
