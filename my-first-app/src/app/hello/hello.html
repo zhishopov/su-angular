@@ -2,7 +2,7 @@
 
 <ul>
   @for(user of users; track user) {
-  <li (click)="onGreet(user.name)">
+  <li (click)="onGreet($event)">
     {{ user.name }} from {{ user.company.name }}
   </li>
   }
@@ -13,3 +13,5 @@
 } @else {
 <p>Login</p>
 }
+
+<img [src]="img" />
