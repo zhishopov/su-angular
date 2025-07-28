@@ -2,10 +2,14 @@
 
 <ul>
   @for(user of users; track user) {
-  <li>{{ user.name }} from {{ user.company.name }}</li>
-  } @if(isLoggedIn) {
-  <p>Log out</p>
-  } @else {
-  <p>Login</p>
+  <li (click)="onGreet(user.name)">
+    {{ user.name }} from {{ user.company.name }}
+  </li>
   }
 </ul>
+
+@if(isLoggedIn) {
+<p>Log out</p>
+} @else {
+<p>Login</p>
+}

@@ -39,4 +39,8 @@ export class Hello {
   constructor() {
     console.log('Initializing Component');
   }
+
+  onGreet(name: string) {
+    console.log(`Hello ${name}`);
+  }
 }
