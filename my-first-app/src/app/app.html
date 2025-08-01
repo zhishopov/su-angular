@@ -231,7 +231,11 @@
       </svg>
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <button (click)="toggleShowLifecycle()">
+        @if(showLifecycle) { "Hide" } @else { "Show" }
+      </button>
       <app-hello></app-hello>
+      <app-lifecycle *ngIf="showLifecycle"></app-lifecycle>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
